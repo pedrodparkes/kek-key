@@ -5,7 +5,7 @@ FROM nginx:alpine
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Add the key file to the default Nginx web directory
-COPY myfile.key /var/www/html/myfile.key
+COPY keys/ /var/www/html/getkey
 
 # Expose the Nginx port
 EXPOSE 80
